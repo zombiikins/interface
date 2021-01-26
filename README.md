@@ -1,5 +1,4 @@
 # CS340 html interface design
----
 
 Setup on local computer
 ---
