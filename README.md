@@ -65,3 +65,7 @@ git push -u origin {name of the branch}
 ```
 Usefull link
 ---
++ [TA's github 01 shown on Piazza](https://github.com/gkochera/CS340-demo-flask-app)
++ [TA's github 02 shown on Piazza](https://github.com/knightsamar/CS340_starter_flask_app)
++ [flask docs](https://flask.palletsprojects.com/en/1.1.x/)
++ [flask project example](https://github.com/pallets/flask/tree/1.1.2/examples/tutorial)
