@@ -1,7 +1,0 @@
-[2021-01-26 20:44:22 -0700] [15745] [INFO] Starting gunicorn 20.0.4
-[2021-01-26 20:44:22 -0700] [15745] [INFO] Listening at: http://0.0.0.0:5000 (15745)
-[2021-01-26 20:44:22 -0700] [15745] [INFO] Using worker: sync
-[2021-01-26 20:44:22 -0700] [15747] [INFO] Booting worker with pid: 15747
-[2021-01-26 20:45:26 -0700] [15747] [INFO] Worker exiting (pid: 15747)
-[2021-01-26 20:45:26 -0700] [15745] [INFO] Handling signal: term
-[2021-01-26 20:45:26 -0700] [15745] [INFO] Shutting down: Master
