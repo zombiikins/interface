@@ -14,8 +14,9 @@ python3 -m venv venv
 # Windows Command Prompt
 python -m venv venv
 ```
-activate virtual
+go into interface folder and activate virtual
 ```
+cd interface
 # Linux and Mac
 source venv/bin/activate
 
