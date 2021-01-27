@@ -55,7 +55,7 @@ git push origin master
 ```
 if try to modify files
 ```
-git checkout {name of the branch}
+git checkout -b {name of the branch}
 ```
 start editing files...
 
