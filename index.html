@@ -1,0 +1,72 @@
+<!-- Home/Claims Page -->
+
+<!-- Need to create CSS file for formatting-->
+<!-- For splitting the scree into two sections -->
+<!-- https://www.w3schools.com/howto/howto_css_split_screen.asp -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Alpha Health System</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+      <ul class="menu">
+        <li class="menu"><a href="">Home/Claims</a></li>
+        <li class="menu"><a href="">Patients</a></li>
+        <li class="menu"><a href="">Providers</a></li>
+        <li class="menu"><a href="">Facilities</a></li>
+      </ul>
+    <!-- Search menu at the left-->
+    <form>
+    <!-- Page Content-->
+    <div class="split search">
+      <form action="">
+        <legend><b>Search Claims</b></legend>
+        <label> Search patient ID:
+          <input type="text" name="patientName">
+        </label>
+        <br/>
+        <label> Search Provider ID:
+          <input type="text" name="patientName">
+        </label>
+        <br/>
+        <label for="facility"> Search Facility:</label>
+          <select id="Facility" name="Facility">
+            <option value="Facility1">Facility 1</option>
+            <option value="Facility2">Facility 2</option>
+            <option value="Facility3">Facility 3</option>
+          </select>
+        <br/>
+        <input type="submit">
+      </form>
+    </div>
+    <div class="split results">
+      <table id="claims">
+        <caption>Claims data will be rendered here</caption>
+        <thead>
+          <th>Claim ID</th>
+          <th>Patient ID</th>
+          <th>Prov ID</th>
+          <th>Facility ID</th>
+          <th>Date of Service</th>
+          <th>Procedure</th>
+          <th>Billed Amount</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Claim 1</td>
+            <td>Patient 1</td>
+            <td>Prov 1</td>
+            <td>Facility 1</td>
+            <td>2020-01-01</td>
+            <td>COVID-19 Test</td>
+            <td>$100.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
