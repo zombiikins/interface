@@ -1,0 +1,52 @@
+/* Set up sections on HTML interface*/
+.split {
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 15%;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.left {
+	left: 0;
+	background: white;
+	width: 25%;
+}
+
+.right {
+	right: 0;
+	background-color: white;
+	width: 75%;
+}
+
+/* Make menu horizonal */
+.menu {
+    display: table;
+    margin: 0 auto;
+}
+
+.menu li {
+    display: inline;
+    padding: 16px;
+}
+
+/* Format table for results*/
+.results {
+	border-collapse:collapse;
+	border: 2px solid #000000;
+	width: 80%;
+}
+
+/* Create borders for table header */
+.results th{
+ 	border-collapse:collapse;
+  	border: 2px solid #000000;
+  	background-color: #B0F1F3;
+}
+
+/* Create borders for table cells */
+.results td{
+  	border-collapse:collapse;
+  	border: 2px solid #000000;
+}

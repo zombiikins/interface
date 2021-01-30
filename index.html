@@ -1,9 +1,5 @@
 <!-- Home/Claims Page -->
 
-<!-- Need to create CSS file for formatting-->
-<!-- For splitting the scree into two sections -->
-<!-- https://www.w3schools.com/howto/howto_css_split_screen.asp -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,28 +9,32 @@
   </head>
   <body>
     <!-- Navigation Menu -->
+    <div class = "header">
+      <h1>Alpha Health Systems</h1>
       <ul class="menu">
         <li class="menu"><a href="">Home/Claims</a></li>
         <li class="menu"><a href="">Patients</a></li>
         <li class="menu"><a href="">Providers</a></li>
         <li class="menu"><a href="">Facilities</a></li>
       </ul>
+    </div>
+    </br>
+    <hr>
     <!-- Search menu at the left-->
-    <form>
-    <!-- Page Content-->
-    <div class="split search">
-      <form action="">
+    <p> This section will perform all of our select statements for each entity.
+    <div class="split left">
+      <form class="claims search" action="">
         <legend><b>Search Claims</b></legend>
-        <label> Search patient ID:
-          <input type="text" name="patientName">
+        <label> By Patient ID:
+          <input type="text" name="patientID">
         </label>
         <br/>
-        <label> Search Provider ID:
-          <input type="text" name="patientName">
+        <label> By Provider ID:
+          <input type="text" name="provID">
         </label>
         <br/>
-        <label for="facility"> Search Facility:</label>
-          <select id="Facility" name="Facility">
+        <label for="facility"> By Facility:</label>
+          <select id="Facility" name="FacilityName">
             <option value="Facility1">Facility 1</option>
             <option value="Facility2">Facility 2</option>
             <option value="Facility3">Facility 3</option>
@@ -42,10 +42,87 @@
         <br/>
         <input type="submit">
       </form>
+      <hr>
+      <form>
+        <legend>Search Patients</legend>
+        <label> By Patient ID:
+          <input type="text" name="patientID">
+        </label>
+        <br/>
+        <label> By Patient FirstName:
+          <input type="text" name="patientFirstName">
+        </label>
+        <br/>
+        <label> By Patient LastName:
+          <input type="text" name="patientLastName">
+        </label>
+        <br/>
+        <label> By Patient Date of Birth:
+          <input type="text" name="patientDOB">
+        </label>
+        <br/>
+        <label> By Provider ID:
+          <input type="text" name="provID">
+        </label>
+        <br/>
+        <input type="submit">
+      </form>
+      <hr>
+      <form class="prov search" action ="">
+        <legend>Search Providers</legend>
+        <label> By Patient ID:
+          <input type="text" name="patientID">
+        </label>
+        <br/>
+        <label> By Provider FirstName:
+          <input type="text" name="provFirstName">
+        </label>
+        <br/>
+        <label> By Provider LastName:
+          <input type="text" name="provLastName">
+        </label>
+        <br/>
+        <label for="facility"> By Facility:</label>
+          <select id="Facility" name="FacilityName">
+            <option value="Facility1">Facility 1</option>
+            <option value="Facility2">Facility 2</option>
+            <option value="Facility3">Facility 3</option>
+          </select>
+        <br/>
+        <input type="submit">
+      </form>
+      <hr>
+      <form class="facility search" action="">
+        <legend>Search Facilities</legend>
+        <label> By Provider ID:
+          <input type="text" name="provID">
+        </label>
+        <br/>
+        <label for="facility"> By Facility:</label>
+          <select id="Facility" name="FacilityName">
+            <option value="Facility1">Facility 1</option>
+            <option value="Facility2">Facility 2</option>
+            <option value="Facility3">Facility 3</option>
+          </select>
+        <br/>
+        <label> By City:
+          <input type="text" name="city">
+        </label>
+        </br>
+        <input type="submit">
+      </form>
     </div>
-    <div class="split results">
-      <table id="claims">
-        <caption>Claims data will be rendered here</caption>
+    <!-- Page Content-->
+    <div class="split right">
+      <table class="results" id="claims">
+        <caption>
+          <h1>This page will double as our landing/home page and our claims search results page.
+          <br>Claims data will be rendered here from any search on the right.
+          <br>The Update button can be used to update the record.
+          <br>The Delete Button can be used to delete the record.
+          <br> Below the table the user has the ability to add a new record.
+          </h1>
+        </caption>
         <thead>
           <th>Claim ID</th>
           <th>Patient ID</th>
@@ -64,9 +141,48 @@
             <td>2020-01-01</td>
             <td>COVID-19 Test</td>
             <td>$100.00</td>
+            <td>
+                <button class="update">Update</button>
+            </td>
+            <td>
+                <button class="delete">Delete</button>
+            </td>
           </tr>
         </tbody>
       </table>
+      </br>
+      </br>
+      <form class="add claim">
+        <legend><h1>Add a New Claim</h1></legend>
+        <label> Patient ID:
+          <input type="text" name="patientID">
+        </label>
+        <br/>
+        <label> Prov ID:
+          <input type="text" name="patientID">
+        </label>
+        <br/>
+        <label> Date of Service:
+          <input type="date" name="dateOfService">
+        </label>
+        </br>
+        <label> Procedure:
+          <input type="text" name="procedure">
+        </label>
+        <br/>
+        <label> Billed Amount:
+          <input type="number" name="patientID">
+        </label>
+        <br/>
+        <label for="facility"> By Facility:</label>
+          <select id="Facility" name="FacilityName">
+            <option value="Facility1">Facility 1</option>
+            <option value="Facility2">Facility 2</option>
+            <option value="Facility3">Facility 3</option>
+          </select>
+        <br/>
+        <input type="submit">
+      </form>
     </div>
   </body>
 </html>
